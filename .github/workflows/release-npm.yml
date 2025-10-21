@@ -1,0 +1,62 @@
+name: Release to npm
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  release-npm:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/js-sdk
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install root dependencies
+        run: npm install
+        working-directory: .
+
+      - name: Install package dependencies
+        run: npm install
+
+      - name: Build package
+        run: npm run build
+
+      - name: Update version
+        run: npm version ${GITHUB_REF_NAME#v} --no-git-tag-version
+
+      - name: Publish to npm
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: Release ${{ github.ref_name }}
+          body: |
+            ## 📦 npm Package Released
+
+            **@oaktis/sdk** version ${{ github.ref_name }} has been published to npm.
+
+            ### Install
+            ```bash
+            npm install @oaktis/sdk@${{ github.ref_name }}
+            ```
+
+            ### Links
+            - 📦 [npm Package](https://www.npmjs.com/package/@oaktis/sdk)
+            - 📚 [Documentation](https://docs.oaktis.com)
+            - 🐙 [GitHub](https://github.com/oaktis/oaktis-sdk)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

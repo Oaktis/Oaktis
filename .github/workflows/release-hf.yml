@@ -1,0 +1,59 @@
+name: Release to HuggingFace
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  release-hf:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: apps/hf-space
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install huggingface_hub
+        run: pip install huggingface_hub
+
+      - name: Configure git
+        run: |
+          git config --global user.email "ci@oaktis.com"
+          git config --global user.name "oaktis-bot"
+
+      - name: Push to HuggingFace Space
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_SPACE: ${{ secrets.HF_SPACE }}  # Format: username/space-name
+        run: |
+          # Initialize new git repo
+          git init
+          git add .
+          git commit -m "release: $GITHUB_REF_NAME"
+
+          # Push to HuggingFace Space
+          git push https://oauth2:${HF_TOKEN}@huggingface.co/spaces/${HF_SPACE} HEAD:main --force
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: Release ${{ github.ref_name }}
+          body: |
+            ## 🤗 HuggingFace Space Updated
+
+            The Oaktis demo space has been updated to version ${{ github.ref_name }}.
+
+            ### Links
+            - 🤗 [HuggingFace Space](https://huggingface.co/spaces/${{ secrets.HF_SPACE }})
+            - 📚 [Documentation](https://docs.oaktis.com)
+            - 🐙 [GitHub](https://github.com/oaktis/oaktis-sdk)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
