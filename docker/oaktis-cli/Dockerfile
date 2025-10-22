@@ -1,44 +1,49 @@
 # Oaktis CLI Docker Image
 FROM node:20-alpine AS builder
 
+# Install pnpm
+RUN corepack enable && corepack prepare pnpm@latest --activate
+
 WORKDIR /app
 
 # Copy workspace configuration
-COPY package.json ./
+COPY package.json pnpm-workspace.yaml pnpm-lock.yaml ./
 COPY packages/js-sdk/package.json ./packages/js-sdk/
 COPY apps/cli/package.json ./apps/cli/
 
 # Install dependencies
-RUN npm install
+RUN pnpm install --frozen-lockfile
 
 # Copy source code
 COPY packages/js-sdk ./packages/js-sdk
 COPY apps/cli ./apps/cli
 
 # Build packages
-WORKDIR /app/packages/js-sdk
-RUN npm run build
-
-WORKDIR /app/apps/cli
-RUN npm run build
+RUN pnpm --filter=@ververv/oaktis-sdk run build
+RUN pnpm --filter=oaktis-cli run build
 
 # Production image
 FROM node:20-alpine
 
+# Install pnpm
+RUN corepack enable && corepack prepare pnpm@latest --activate
+
 WORKDIR /app
 
-# Copy built artifacts and dependencies
+# Copy workspace configuration
+COPY package.json pnpm-workspace.yaml ./
+COPY packages/js-sdk/package.json ./packages/js-sdk/
+COPY apps/cli/package.json ./apps/cli/
+
+# Copy built artifacts
 COPY --from=builder /app/packages/js-sdk/dist ./packages/js-sdk/dist
-COPY --from=builder /app/packages/js-sdk/package.json ./packages/js-sdk/
 COPY --from=builder /app/apps/cli/dist ./apps/cli/dist
-COPY --from=builder /app/apps/cli/package.json ./apps/cli/
-COPY --from=builder /app/package.json ./
 
 # Install production dependencies only
-RUN npm install --omit=dev
+RUN pnpm install --prod --frozen-lockfile
 
-# Create symlink for CLI
-RUN npm link ./apps/cli
+# Create global link for CLI
+RUN pnpm --filter=oaktis-cli link --global
 
 # Set environment
 ENV NODE_ENV=production
