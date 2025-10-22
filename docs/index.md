@@ -134,10 +134,10 @@ const job = await client.image.generate({
 ## Next Steps
 
 - 📖 [Quick Start Guide](getting-started/quickstart.md) - Get up and running in minutes
-- 🔧 [JavaScript SDK](js-sdk/overview.md) - Full reference for the JS/TS SDK
-- 🐍 [Python SDK](py-sdk/overview.md) - Complete Python SDK documentation
-- 💻 [CLI Reference](cli/overview.md) - Command-line tool documentation
-- 🎯 [API Reference](api/video.md) - Detailed API documentation
+- 🔧 **JavaScript SDK** - See [npm package](https://www.npmjs.com/package/@oaktis/sdk) for full reference
+- 🐍 **Python SDK** - See [PyPI package](https://pypi.org/project/oaktis/) for complete documentation
+- 💻 **CLI Reference** - See [CLI package](https://www.npmjs.com/package/oaktis-cli) for command-line tool guide
+- 🎯 **GitHub** - Visit [repository](https://github.com/oaktis/oaktis-sdk) for examples and source code
 
 ## Community & Support
 

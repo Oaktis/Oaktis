@@ -37,27 +37,6 @@ nav:
       - Quick Start: getting-started/quickstart.md
       - Installation: getting-started/installation.md
       - Authentication: getting-started/authentication.md
-  - JavaScript SDK:
-      - Overview: js-sdk/overview.md
-      - API Reference: js-sdk/api-reference.md
-      - Examples: js-sdk/examples.md
-  - Python SDK:
-      - Overview: py-sdk/overview.md
-      - API Reference: py-sdk/api-reference.md
-      - Examples: py-sdk/examples.md
-  - CLI:
-      - Overview: cli/overview.md
-      - Commands: cli/commands.md
-      - Examples: cli/examples.md
-  - API:
-      - Video Generation: api/video.md
-      - Image Generation: api/image.md
-      - Job Management: api/jobs.md
-      - Error Handling: api/errors.md
-  - Guides:
-      - Docker Usage: guides/docker.md
-      - CI/CD Integration: guides/cicd.md
-      - Best Practices: guides/best-practices.md
 
 markdown_extensions:
   - pymdownx.highlight:
