@@ -126,7 +126,7 @@ docker run -e OAKTIS_API_KEY=your-api-key \
 
 Try Oaktis in your browser with our interactive demo on HuggingFace:
 
-👉 **[HuggingFace Space Demo](https://huggingface.co/spaces/oaktis/demo)** - No installation required!
+👉 **[HuggingFace Space Demo](https://huggingface.co/spaces/ververv/oaktis)** - No installation required!
 
 ## 🔑 Getting Your API Key
 
@@ -201,7 +201,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - 📦 **npm Package**: [@oaktis/sdk](https://www.npmjs.com/package/@oaktis/sdk)
 - 🐍 **PyPI Package**: [oaktis](https://pypi.org/project/oaktis/)
 - 🐳 **Docker Hub**: [oaktis/cli](https://hub.docker.com/r/oaktis/cli)
-- 🤗 **HuggingFace**: [Demo Space](https://huggingface.co/spaces/oaktis/demo)
+- 🤗 **HuggingFace**: [ververv/oaktis](https://huggingface.co/spaces/ververv/oaktis)
 - 🐛 **Issues**: [GitHub Issues](https://github.com/Oaktis/Oaktis/issues)
 - 💬 **Discussions**: [GitHub Discussions](https://github.com/Oaktis/Oaktis/discussions)
 
