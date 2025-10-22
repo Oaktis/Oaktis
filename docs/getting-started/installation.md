@@ -7,19 +7,19 @@ Install Oaktis SDKs for your preferred platform.
 ### npm
 
 ```bash
-npm install @oaktis/sdk
+npm install @ververv/oaktis-sdk
 ```
 
 ### yarn
 
 ```bash
-yarn add @oaktis/sdk
+yarn add @ververv/oaktis-sdk
 ```
 
 ### pnpm
 
 ```bash
-pnpm add @oaktis/sdk
+pnpm add @ververv/oaktis-sdk
 ```
 
 ### Requirements
@@ -99,7 +99,7 @@ docker build -t oaktis/cli -f docker/oaktis-cli/Dockerfile .
 ### JavaScript/TypeScript
 
 ```bash
-node -e "console.log(require('@oaktis/sdk').OaktisClient)"
+node -e "console.log(require('@ververv/oaktis-sdk').OaktisClient)"
 ```
 
 ### Python
@@ -125,7 +125,7 @@ docker run oaktis/cli --version
 ### npm
 
 ```bash
-npm update @oaktis/sdk
+npm update @ververv/oaktis-sdk
 ```
 
 ### pip
@@ -145,7 +145,7 @@ docker pull oaktis/cli:latest
 ### npm
 
 ```bash
-npm uninstall @oaktis/sdk
+npm uninstall @ververv/oaktis-sdk
 ```
 
 ### pip

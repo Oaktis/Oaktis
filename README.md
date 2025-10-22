@@ -4,7 +4,7 @@
 
 Official SDKs and tools for Oaktis - AI-powered image & video generation platform.
 
-[![npm version](https://img.shields.io/npm/v/@oaktis/sdk)](https://www.npmjs.com/package/@oaktis/sdk)
+[![npm version](https://img.shields.io/npm/v/@ververv/oaktis-sdk)](https://www.npmjs.com/package/@ververv/oaktis-sdk)
 [![PyPI version](https://img.shields.io/pypi/v/oaktis)](https://pypi.org/project/oaktis/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/oaktis/cli)](https://hub.docker.com/r/oaktis/cli)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
@@ -26,7 +26,7 @@ This monorepo contains multiple packages for different platforms:
 
 | Package | Platform | Version | Installation |
 |---------|----------|---------|--------------|
-| [@oaktis/sdk](https://www.npmjs.com/package/@oaktis/sdk) | npm | [![npm](https://img.shields.io/npm/v/@oaktis/sdk)](https://www.npmjs.com/package/@oaktis/sdk) | `npm install @oaktis/sdk` |
+| [@ververv/oaktis-sdk](https://www.npmjs.com/package/@ververv/oaktis-sdk) | npm | [![npm](https://img.shields.io/npm/v/@ververv/oaktis-sdk)](https://www.npmjs.com/package/@ververv/oaktis-sdk) | `npm install @ververv/oaktis-sdk` |
 | [oaktis](https://pypi.org/project/oaktis/) | PyPI | [![PyPI](https://img.shields.io/pypi/v/oaktis)](https://pypi.org/project/oaktis/) | `pip install oaktis` |
 | [oaktis-cli](https://www.npmjs.com/package/oaktis-cli) | npm | [![npm](https://img.shields.io/npm/v/oaktis-cli)](https://www.npmjs.com/package/oaktis-cli) | `npm install -g oaktis-cli` |
 | [oaktis/cli](https://hub.docker.com/r/oaktis/cli) | Docker | [![Docker](https://img.shields.io/docker/pulls/oaktis/cli)](https://hub.docker.com/r/oaktis/cli) | `docker pull oaktis/cli` |
@@ -36,11 +36,11 @@ This monorepo contains multiple packages for different platforms:
 ### JavaScript/TypeScript
 
 ```bash
-npm install @oaktis/sdk
+npm install @ververv/oaktis-sdk
 ```
 
 ```typescript
-import { OaktisClient } from '@oaktis/sdk';
+import { OaktisClient } from '@ververv/oaktis-sdk';
 
 const client = new OaktisClient({
   apiKey: process.env.OAKTIS_API_KEY!
@@ -198,10 +198,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - 🌐 **Website**: [oaktis.com](https://oaktis.com/?utm_source=github&utm_medium=devhub&utm_campaign=oss-sdk&utm_content=repo-links)
 - 📚 **Documentation**: [docs.oaktis.com](https://docs.oaktis.com)
-- 📦 **npm Package**: [@oaktis/sdk](https://www.npmjs.com/package/@oaktis/sdk)
+- 📦 **npm Package**: [@ververv/oaktis-sdk](https://www.npmjs.com/package/@ververv/oaktis-sdk)
 - 🐍 **PyPI Package**: [oaktis](https://pypi.org/project/oaktis/)
 - 🐳 **Docker Hub**: [oaktis/cli](https://hub.docker.com/r/oaktis/cli)
-- 🤗 **HuggingFace**: [ververv/oaktis](https://huggingface.co/spaces/ververv/oaktis)
+- 🤗 **HuggingFace**: [Oaktis Space](https://huggingface.co/spaces/ververv/oaktis)
 - 🐛 **Issues**: [GitHub Issues](https://github.com/Oaktis/Oaktis/issues)
 - 💬 **Discussions**: [GitHub Discussions](https://github.com/Oaktis/Oaktis/discussions)
 

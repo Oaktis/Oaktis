@@ -15,13 +15,13 @@ First, sign up and get your API key at:
     Install the SDK:
 
     ```bash
-    npm install @oaktis/sdk
+    npm install @ververv/oaktis-sdk
     ```
 
     Create a file `example.ts`:
 
     ```typescript
-    import { OaktisClient } from '@oaktis/sdk';
+    import { OaktisClient } from '@ververv/oaktis-sdk';
 
     const client = new OaktisClient({
       apiKey: process.env.OAKTIS_API_KEY!

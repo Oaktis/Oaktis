@@ -47,15 +47,15 @@ jobs:
           body: |
             ## 📦 npm Package Released
 
-            **@oaktis/sdk** version ${{ github.ref_name }} has been published to npm.
+            **@ververv/oaktis-sdk** version ${{ github.ref_name }} has been published to npm.
 
             ### Install
             ```bash
-            npm install @oaktis/sdk@${{ github.ref_name }}
+            npm install @ververv/oaktis-sdk@${{ github.ref_name }}
             ```
 
             ### Links
-            - 📦 [npm Package](https://www.npmjs.com/package/@oaktis/sdk)
+            - 📦 [npm Package](https://www.npmjs.com/package/@ververv/oaktis-sdk)
             - 📚 [Documentation](https://docs.oaktis.com)
             - 🐙 [GitHub](https://github.com/Oaktis/Oaktis)
         env:

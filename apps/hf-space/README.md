@@ -53,7 +53,7 @@ This Space requires an `OAKTIS_API_KEY` environment variable to be configured:
 - 🌐 **Website**: [https://oaktis.com](https://oaktis.com)
 - 📚 **Documentation**: [https://docs.oaktis.com](https://docs.oaktis.com)
 - 🐙 **GitHub**: [https://github.com/Oaktis/Oaktis](https://github.com/Oaktis/Oaktis)
-- 📦 **npm Package**: [@oaktis/sdk](https://www.npmjs.com/package/@oaktis/sdk)
+- 📦 **npm Package**: [@ververv/oaktis-sdk](https://www.npmjs.com/package/@ververv/oaktis-sdk)
 - 🐍 **PyPI Package**: [oaktis](https://pypi.org/project/oaktis/)
 
 ## Development
@@ -86,11 +86,11 @@ Use the Oaktis SDK in your own applications:
 ### JavaScript/TypeScript
 
 ```bash
-npm install @oaktis/sdk
+npm install @ververv/oaktis-sdk
 ```
 
 ```typescript
-import { OaktisClient } from '@oaktis/sdk';
+import { OaktisClient } from '@ververv/oaktis-sdk';
 
 const client = new OaktisClient({ apiKey: 'your-api-key' });
 const job = await client.video.generate({

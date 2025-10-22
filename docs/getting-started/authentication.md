@@ -59,7 +59,7 @@ Load environment variables:
 
 ```typescript
 import 'dotenv/config';
-import { OaktisClient } from '@oaktis/sdk';
+import { OaktisClient } from '@ververv/oaktis-sdk';
 
 const client = new OaktisClient({
   apiKey: process.env.OAKTIS_API_KEY!
@@ -91,7 +91,7 @@ client = OaktisClient(api_key=os.getenv("OAKTIS_API_KEY"))
 ### JavaScript/TypeScript
 
 ```typescript
-import { OaktisClient } from '@oaktis/sdk';
+import { OaktisClient } from '@ververv/oaktis-sdk';
 
 const client = new OaktisClient({
   apiKey: 'your-api-key',  // Required

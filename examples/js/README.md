@@ -7,7 +7,7 @@ Code examples for the Oaktis JavaScript/TypeScript SDK.
 1. Install dependencies:
 
 ```bash
-npm install @oaktis/sdk tsx dotenv
+npm install @ververv/oaktis-sdk tsx dotenv
 ```
 
 2. Set your API key:

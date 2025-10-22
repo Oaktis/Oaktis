@@ -1,10 +1,10 @@
-# @oaktis/sdk
+# @ververv/oaktis-sdk
 
 > **🔗 Try Oaktis → [https://oaktis.com](https://oaktis.com/?utm_source=npm&utm_medium=devhub&utm_campaign=oss-sdk&utm_content=readme)**
 
 Official JavaScript/TypeScript SDK for Oaktis - AI-powered image & video generation.
 
-[![npm version](https://img.shields.io/npm/v/@oaktis/sdk)](https://www.npmjs.com/package/@oaktis/sdk)
+[![npm version](https://img.shields.io/npm/v/@ververv/oaktis-sdk)](https://www.npmjs.com/package/@ververv/oaktis-sdk)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 ## Features
@@ -19,19 +19,19 @@ Official JavaScript/TypeScript SDK for Oaktis - AI-powered image & video generat
 ## Installation
 
 ```bash
-npm install @oaktis/sdk
+npm install @ververv/oaktis-sdk
 ```
 
 Or with yarn:
 
 ```bash
-yarn add @oaktis/sdk
+yarn add @ververv/oaktis-sdk
 ```
 
 Or with pnpm:
 
 ```bash
-pnpm add @oaktis/sdk
+pnpm add @ververv/oaktis-sdk
 ```
 
 ## Quick Start
@@ -39,7 +39,7 @@ pnpm add @oaktis/sdk
 ### Video Generation
 
 ```typescript
-import { OaktisClient } from '@oaktis/sdk';
+import { OaktisClient } from '@ververv/oaktis-sdk';
 
 const client = new OaktisClient({
   apiKey: process.env.OAKTIS_API_KEY!
@@ -69,7 +69,7 @@ if (status.status === 'completed') {
 ### Image Generation
 
 ```typescript
-import { OaktisClient } from '@oaktis/sdk';
+import { OaktisClient } from '@ververv/oaktis-sdk';
 
 const client = new OaktisClient({
   apiKey: process.env.OAKTIS_API_KEY!
@@ -208,7 +208,7 @@ import type {
   ImageJob,
   JobStatus,
   APIError
-} from '@oaktis/sdk';
+} from '@ververv/oaktis-sdk';
 ```
 
 ## Links

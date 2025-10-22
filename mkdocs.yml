@@ -62,7 +62,7 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/Oaktis/Oaktis
     - icon: fontawesome/brands/npm
-      link: https://www.npmjs.com/package/@oaktis/sdk
+      link: https://www.npmjs.com/package/@ververv/oaktis-sdk
     - icon: fontawesome/brands/python
       link: https://pypi.org/project/oaktis/
     - icon: fontawesome/brands/docker

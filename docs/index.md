@@ -22,11 +22,11 @@ Oaktis is a powerful API platform that enables developers to create images and v
 ### JavaScript/TypeScript
 
 ```bash
-npm install @oaktis/sdk
+npm install @ververv/oaktis-sdk
 ```
 
 ```typescript
-import { OaktisClient } from '@oaktis/sdk';
+import { OaktisClient } from '@ververv/oaktis-sdk';
 
 const client = new OaktisClient({ apiKey: 'your-api-key' });
 
@@ -91,7 +91,7 @@ To use Oaktis, you'll need an API key. Get started at:
 
 | Package | Platform | Installation |
 |---------|----------|--------------|
-| [@oaktis/sdk](https://www.npmjs.com/package/@oaktis/sdk) | npm | `npm install @oaktis/sdk` |
+| [@ververv/oaktis-sdk](https://www.npmjs.com/package/@ververv/oaktis-sdk) | npm | `npm install @ververv/oaktis-sdk` |
 | [oaktis](https://pypi.org/project/oaktis/) | PyPI | `pip install oaktis` |
 | [oaktis-cli](https://www.npmjs.com/package/oaktis-cli) | npm | `npm install -g oaktis-cli` |
 | [oaktis/cli](https://hub.docker.com/r/oaktis/cli) | Docker | `docker pull oaktis/cli` |
@@ -134,7 +134,7 @@ const job = await client.image.generate({
 ## Next Steps
 
 - 📖 [Quick Start Guide](getting-started/quickstart.md) - Get up and running in minutes
-- 🔧 **JavaScript SDK** - See [npm package](https://www.npmjs.com/package/@oaktis/sdk) for full reference
+- 🔧 **JavaScript SDK** - See [npm package](https://www.npmjs.com/package/@ververv/oaktis-sdk) for full reference
 - 🐍 **Python SDK** - See [PyPI package](https://pypi.org/project/oaktis/) for complete documentation
 - 💻 **CLI Reference** - See [CLI package](https://www.npmjs.com/package/oaktis-cli) for command-line tool guide
 - 🎯 **GitHub** - Visit [repository](https://github.com/Oaktis/Oaktis) for examples and source code
