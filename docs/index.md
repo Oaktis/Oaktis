@@ -137,13 +137,13 @@ const job = await client.image.generate({
 - 🔧 **JavaScript SDK** - See [npm package](https://www.npmjs.com/package/@oaktis/sdk) for full reference
 - 🐍 **Python SDK** - See [PyPI package](https://pypi.org/project/oaktis/) for complete documentation
 - 💻 **CLI Reference** - See [CLI package](https://www.npmjs.com/package/oaktis-cli) for command-line tool guide
-- 🎯 **GitHub** - Visit [repository](https://github.com/oaktis/oaktis-sdk) for examples and source code
+- 🎯 **GitHub** - Visit [repository](https://github.com/Oaktis/Oaktis) for examples and source code
 
 ## Community & Support
 
-- 🐙 **GitHub**: [github.com/oaktis/oaktis-sdk](https://github.com/oaktis/oaktis-sdk)
-- 🐛 **Issues**: [github.com/oaktis/oaktis-sdk/issues](https://github.com/oaktis/oaktis-sdk/issues)
-- 💬 **Discussions**: [github.com/oaktis/oaktis-sdk/discussions](https://github.com/oaktis/oaktis-sdk/discussions)
+- 🐙 **GitHub**: [github.com/Oaktis/Oaktis](https://github.com/Oaktis/Oaktis)
+- 🐛 **Issues**: [github.com/Oaktis/Oaktis/issues](https://github.com/Oaktis/Oaktis/issues)
+- 💬 **Discussions**: [github.com/Oaktis/Oaktis/discussions](https://github.com/Oaktis/Oaktis/discussions)
 - 🌐 **Website**: [oaktis.com](https://oaktis.com)
 
 ## License

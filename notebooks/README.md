@@ -52,5 +52,5 @@ Get your Oaktis API key from:
 ## More Resources
 
 - 📚 [Full Documentation](https://docs.oaktis.com)
-- 🐙 [GitHub Repository](https://github.com/oaktis/oaktis-sdk)
+- 🐙 [GitHub Repository](https://github.com/Oaktis/Oaktis)
 - 📦 [PyPI Package](https://pypi.org/project/oaktis/)

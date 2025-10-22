@@ -57,6 +57,6 @@ jobs:
             ### Links
             - 📦 [npm Package](https://www.npmjs.com/package/@oaktis/sdk)
             - 📚 [Documentation](https://docs.oaktis.com)
-            - 🐙 [GitHub](https://github.com/oaktis/oaktis-sdk)
+            - 🐙 [GitHub](https://github.com/Oaktis/Oaktis)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

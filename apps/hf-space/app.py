@@ -135,7 +135,7 @@ with gr.Blocks(title="Oaktis AI Demo", theme=gr.themes.Soft()) as demo:
 
         🔗 [Try Oaktis](https://oaktis.com/?utm_source=huggingface&utm_medium=devhub&utm_campaign=oss-sdk&utm_content=space-header) |
         📚 [Documentation](https://docs.oaktis.com) |
-        🐙 [GitHub](https://github.com/oaktis/oaktis-sdk)
+        🐙 [GitHub](https://github.com/Oaktis/Oaktis)
 
         ---
         """

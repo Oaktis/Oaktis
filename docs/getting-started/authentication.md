@@ -215,5 +215,5 @@ echo $OAKTIS_API_KEY  # Should print your key
 ## Next Steps
 
 - 📖 [Quick Start Guide](quickstart.md) - Make your first API call
-- 🔧 [JavaScript SDK](https://github.com/oaktis/oaktis-sdk/tree/main/packages/js-sdk) - Full SDK reference
-- 🐍 [Python SDK](https://github.com/oaktis/oaktis-sdk/tree/main/packages/py-sdk) - Python documentation
+- 🔧 [JavaScript SDK](https://github.com/Oaktis/Oaktis/tree/main/packages/js-sdk) - Full SDK reference
+- 🐍 [Python SDK](https://github.com/Oaktis/Oaktis/tree/main/packages/py-sdk) - Python documentation

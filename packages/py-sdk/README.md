@@ -319,8 +319,8 @@ asyncio.run(main())
 
 - 🌐 **Website**: [https://oaktis.com](https://oaktis.com)
 - 📚 **Documentation**: [https://docs.oaktis.com](https://docs.oaktis.com)
-- 🐙 **GitHub**: [https://github.com/oaktis/oaktis-sdk](https://github.com/oaktis/oaktis-sdk)
-- 🐛 **Issues**: [https://github.com/oaktis/oaktis-sdk/issues](https://github.com/oaktis/oaktis-sdk/issues)
+- 🐙 **GitHub**: [https://github.com/Oaktis/Oaktis](https://github.com/Oaktis/Oaktis)
+- 🐛 **Issues**: [https://github.com/Oaktis/Oaktis/issues](https://github.com/Oaktis/Oaktis/issues)
 
 ## License
 

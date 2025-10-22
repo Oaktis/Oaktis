@@ -89,7 +89,7 @@ docker pull oaktis/cli:0.1.0
 ### Build from Source
 
 ```bash
-git clone https://github.com/oaktis/oaktis-sdk
+git clone https://github.com/Oaktis/Oaktis
 cd oaktis-sdk
 docker build -t oaktis/cli -f docker/oaktis-cli/Dockerfile .
 ```

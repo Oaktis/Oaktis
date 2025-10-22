@@ -58,6 +58,6 @@ jobs:
             ### Links
             - 🐍 [PyPI Package](https://pypi.org/project/oaktis/)
             - 📚 [Documentation](https://docs.oaktis.com)
-            - 🐙 [GitHub](https://github.com/oaktis/oaktis-sdk)
+            - 🐙 [GitHub](https://github.com/Oaktis/Oaktis)
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

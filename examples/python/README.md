@@ -52,4 +52,4 @@ python basic_image.py
 For more examples and documentation, visit:
 
 - 📚 [Full Documentation](https://docs.oaktis.com)
-- 🐙 [GitHub Repository](https://github.com/oaktis/oaktis-sdk)
+- 🐙 [GitHub Repository](https://github.com/Oaktis/Oaktis)

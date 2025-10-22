@@ -220,9 +220,9 @@ eval "$(oaktis --completion zsh)"
 
 - 🌐 **Website**: [https://oaktis.com](https://oaktis.com)
 - 📚 **Documentation**: [https://docs.oaktis.com](https://docs.oaktis.com)
-- 🐙 **GitHub**: [https://github.com/oaktis/oaktis-sdk](https://github.com/oaktis/oaktis-sdk)
+- 🐙 **GitHub**: [https://github.com/Oaktis/Oaktis](https://github.com/Oaktis/Oaktis)
 - 📦 **npm Package**: [@oaktis/sdk](https://www.npmjs.com/package/@oaktis/sdk)
-- 🐛 **Issues**: [https://github.com/oaktis/oaktis-sdk/issues](https://github.com/oaktis/oaktis-sdk/issues)
+- 🐛 **Issues**: [https://github.com/Oaktis/Oaktis/issues](https://github.com/Oaktis/Oaktis/issues)
 
 ## License
 

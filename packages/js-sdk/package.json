@@ -1,5 +1,5 @@
 {
-  "name": "@oaktis/sdk",
+  "name": "@ververv/oaktis-sdk",
   "version": "0.1.0",
   "description": "Official JavaScript/TypeScript SDK for Oaktis - AI-powered image & video generation",
   "type": "module",
@@ -26,10 +26,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/oaktis/oaktis-sdk"
+    "url": "https://github.com/Oaktis/Oaktis"
   },
   "homepage": "https://oaktis.com/?utm_source=npm&utm_medium=devhub&utm_campaign=oss-sdk&utm_content=pkg-homepage",
-  "bugs": "https://github.com/oaktis/oaktis-sdk/issues",
+  "bugs": "https://github.com/Oaktis/Oaktis/issues",
   "license": "MIT",
   "dependencies": {
     "cross-fetch": "^4.0.0"

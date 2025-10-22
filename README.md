@@ -8,7 +8,7 @@ Official SDKs and tools for Oaktis - AI-powered image & video generation platfor
 [![PyPI version](https://img.shields.io/pypi/v/oaktis)](https://pypi.org/project/oaktis/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/oaktis/cli)](https://hub.docker.com/r/oaktis/cli)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![GitHub Stars](https://img.shields.io/github/stars/oaktis/oaktis-sdk?style=social)](https://github.com/oaktis/oaktis-sdk)
+[![GitHub Stars](https://img.shields.io/github/stars/oaktis/oaktis-sdk?style=social)](https://github.com/Oaktis/Oaktis)
 
 ## ✨ Features
 
@@ -158,7 +158,7 @@ oaktis-sdk/
 
 ```bash
 # Clone the repository
-git clone https://github.com/oaktis/oaktis-sdk
+git clone https://github.com/Oaktis/Oaktis
 cd oaktis-sdk
 
 # Install dependencies
@@ -202,8 +202,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - 🐍 **PyPI Package**: [oaktis](https://pypi.org/project/oaktis/)
 - 🐳 **Docker Hub**: [oaktis/cli](https://hub.docker.com/r/oaktis/cli)
 - 🤗 **HuggingFace**: [Demo Space](https://huggingface.co/spaces/oaktis/demo)
-- 🐛 **Issues**: [GitHub Issues](https://github.com/oaktis/oaktis-sdk/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/oaktis/oaktis-sdk/discussions)
+- 🐛 **Issues**: [GitHub Issues](https://github.com/Oaktis/Oaktis/issues)
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/Oaktis/Oaktis/discussions)
 
 ## 🌟 Show Your Support
 

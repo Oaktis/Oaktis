@@ -1,9 +1,9 @@
 site_name: Oaktis Documentation
-site_url: https://oaktis.github.io/oaktis-sdk/
+site_url: https://Oaktis.github.io/Oaktis/
 site_description: Official documentation for Oaktis - AI-powered image & video generation
 site_author: Oaktis
-repo_url: https://github.com/oaktis/oaktis-sdk
-repo_name: oaktis/oaktis-sdk
+repo_url: https://github.com/Oaktis/Oaktis
+repo_name: Oaktis/Oaktis
 edit_uri: edit/main/docs/
 
 theme:
@@ -60,7 +60,7 @@ plugins:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/oaktis/oaktis-sdk
+      link: https://github.com/Oaktis/Oaktis
     - icon: fontawesome/brands/npm
       link: https://www.npmjs.com/package/@oaktis/sdk
     - icon: fontawesome/brands/python

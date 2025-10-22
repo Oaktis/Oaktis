@@ -28,8 +28,8 @@ dependencies = [
 [project.urls]
 Homepage = "https://oaktis.com/?utm_source=pypi&utm_medium=devhub&utm_campaign=oss-sdk&utm_content=pkg-homepage"
 Documentation = "https://docs.oaktis.com"
-Repository = "https://github.com/oaktis/oaktis-sdk"
-Issues = "https://github.com/oaktis/oaktis-sdk/issues"
+Repository = "https://github.com/Oaktis/Oaktis"
+Issues = "https://github.com/Oaktis/Oaktis/issues"
 
 [project.optional-dependencies]
 dev = [

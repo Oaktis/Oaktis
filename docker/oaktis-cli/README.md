@@ -143,7 +143,7 @@ generate_video:
 
 ```bash
 # Clone the repository
-git clone https://github.com/oaktis/oaktis-sdk
+git clone https://github.com/Oaktis/Oaktis
 cd oaktis-sdk
 
 # Build the image
@@ -232,10 +232,10 @@ docker run -it --entrypoint /bin/sh \
 
 - 🌐 **Website**: [https://oaktis.com](https://oaktis.com)
 - 📚 **Documentation**: [https://docs.oaktis.com](https://docs.oaktis.com)
-- 🐙 **GitHub**: [https://github.com/oaktis/oaktis-sdk](https://github.com/oaktis/oaktis-sdk)
+- 🐙 **GitHub**: [https://github.com/Oaktis/Oaktis](https://github.com/Oaktis/Oaktis)
 - 📦 **npm Package**: [@oaktis/sdk](https://www.npmjs.com/package/@oaktis/sdk)
 - 🐍 **PyPI Package**: [oaktis](https://pypi.org/project/oaktis/)
-- 🐛 **Issues**: [https://github.com/oaktis/oaktis-sdk/issues](https://github.com/oaktis/oaktis-sdk/issues)
+- 🐛 **Issues**: [https://github.com/Oaktis/Oaktis/issues](https://github.com/Oaktis/Oaktis/issues)
 
 ## License
 

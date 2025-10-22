@@ -66,7 +66,7 @@ jobs:
             Documentation has been updated and deployed to GitHub Pages.
 
             ### Links
-            - 📚 [Documentation](https://${{ github.repository_owner }}.github.io/oaktis-sdk/)
-            - 🐙 [GitHub](https://github.com/oaktis/oaktis-sdk)
+            - 📚 [Documentation](https://${{ github.repository_owner }}.github.io/Oaktis/)
+            - 🐙 [GitHub](https://github.com/${{ github.repository }})
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

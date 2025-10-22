@@ -199,9 +199,9 @@ First, sign up and get your API key at:
 
 - 📖 [Installation Guide](installation.md) - Detailed installation instructions
 - 🔑 [Authentication](authentication.md) - Learn about API key management
-- 🔧 [JavaScript SDK](https://github.com/oaktis/oaktis-sdk/tree/main/packages/js-sdk) - Full JS/TS SDK reference
-- 🐍 [Python SDK](https://github.com/oaktis/oaktis-sdk/tree/main/packages/py-sdk) - Complete Python SDK documentation
-- 💻 [CLI Reference](https://github.com/oaktis/oaktis-sdk/tree/main/apps/cli) - Command-line tool guide
+- 🔧 [JavaScript SDK](https://github.com/Oaktis/Oaktis/tree/main/packages/js-sdk) - Full JS/TS SDK reference
+- 🐍 [Python SDK](https://github.com/Oaktis/Oaktis/tree/main/packages/py-sdk) - Complete Python SDK documentation
+- 💻 [CLI Reference](https://github.com/Oaktis/Oaktis/tree/main/apps/cli) - Command-line tool guide
 
 ## Common Issues
 
@@ -239,6 +239,6 @@ client = OaktisClient(
 
 ## Getting Help
 
-- 🐛 Report issues: [GitHub Issues](https://github.com/oaktis/oaktis-sdk/issues)
-- 💬 Ask questions: [GitHub Discussions](https://github.com/oaktis/oaktis-sdk/discussions)
+- 🐛 Report issues: [GitHub Issues](https://github.com/Oaktis/Oaktis/issues)
+- 💬 Ask questions: [GitHub Discussions](https://github.com/Oaktis/Oaktis/discussions)
 - 📧 Email support: support@oaktis.com
