@@ -47,24 +47,24 @@ jobs:
           repository: oaktis/cli
           readme-filepath: docker/oaktis-cli/README.md
 
-      - name: Create GitHub Release
-        uses: softprops/action-gh-release@v1
-        with:
-          name: Release ${{ github.ref_name }}
-          body: |
-            ## 🐳 Docker Image Released
+      # - name: Create GitHub Release
+      #   uses: softprops/action-gh-release@v1
+      #   with:
+      #     name: Release ${{ github.ref_name }}
+      #     body: |
+      #       ## 🐳 Docker Image Released
 
-            **oaktis/cli** version ${{ github.ref_name }} has been published to Docker Hub.
+      #       **oaktis/cli** version ${{ github.ref_name }} has been published to Docker Hub.
 
-            ### Usage
-            ```bash
-            docker pull oaktis/cli:${{ steps.version.outputs.VERSION }}
-            docker run -e OAKTIS_API_KEY=your-key oaktis/cli:${{ steps.version.outputs.VERSION }} video "test"
-            ```
+      #       ### Usage
+      #       ```bash
+      #       docker pull oaktis/cli:${{ steps.version.outputs.VERSION }}
+      #       docker run -e OAKTIS_API_KEY=your-key oaktis/cli:${{ steps.version.outputs.VERSION }} video "test"
+      #       ```
 
-            ### Links
-            - 🐳 [Docker Hub](https://hub.docker.com/r/oaktis/cli)
-            - 📚 [Documentation](https://docs.oaktis.com)
-            - 🐙 [GitHub](https://github.com/Oaktis/Oaktis)
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #       ### Links
+      #       - 🐳 [Docker Hub](https://hub.docker.com/r/oaktis/cli)
+      #       - 📚 [Documentation](https://docs.oaktis.com)
+      #       - 🐙 [GitHub](https://github.com/Oaktis/Oaktis)
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

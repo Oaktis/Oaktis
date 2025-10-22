@@ -43,24 +43,3 @@ jobs:
         working-directory: packages/js-sdk
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
-      - name: Create GitHub Release
-        uses: softprops/action-gh-release@v1
-        with:
-          name: Release ${{ github.ref_name }}
-          body: |
-            ## 📦 npm Package Released
-
-            **@ververv/oaktis-sdk** version ${{ github.ref_name }} has been published to npm.
-
-            ### Install
-            ```bash
-            npm install @ververv/oaktis-sdk@${{ github.ref_name }}
-            ```
-
-            ### Links
-            - 📦 [npm Package](https://www.npmjs.com/package/@ververv/oaktis-sdk)
-            - 📚 [Documentation](https://docs.oaktis.com)
-            - 🐙 [GitHub](https://github.com/Oaktis/Oaktis)
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

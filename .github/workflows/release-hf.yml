@@ -42,18 +42,18 @@ jobs:
           # Push to HuggingFace Space
           git push https://oauth2:${HF_TOKEN}@huggingface.co/spaces/${HF_SPACE} HEAD:main --force
 
-      - name: Create GitHub Release
-        uses: softprops/action-gh-release@v1
-        with:
-          name: Release ${{ github.ref_name }}
-          body: |
-            ## 🤗 HuggingFace Space Updated
+      # - name: Create GitHub Release
+      #   uses: softprops/action-gh-release@v1
+      #   with:
+      #     name: Release ${{ github.ref_name }}
+      #     body: |
+      #       ## 🤗 HuggingFace Space Updated
 
-            The Oaktis demo space has been updated to version ${{ github.ref_name }}.
+      #       The Oaktis demo space has been updated to version ${{ github.ref_name }}.
 
-            ### Links
-            - 🤗 [HuggingFace Space](https://huggingface.co/spaces/${{ secrets.HF_SPACE }})
-            - 📚 [Documentation](https://docs.oaktis.com)
-            - 🐙 [GitHub](https://github.com/Oaktis/Oaktis)
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #       ### Links
+      #       - 🤗 [HuggingFace Space](https://huggingface.co/spaces/${{ secrets.HF_SPACE }})
+      #       - 📚 [Documentation](https://docs.oaktis.com)
+      #       - 🐙 [GitHub](https://github.com/Oaktis/Oaktis)
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

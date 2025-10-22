@@ -43,7 +43,10 @@ COPY --from=builder /app/apps/cli/dist ./apps/cli/dist
 RUN pnpm install --prod --frozen-lockfile
 
 # Create global link for CLI
-RUN pnpm --filter=oaktis-cli link --global
+# Ensure pnpm global bin is in PATH and link CLI globally
+ENV PNPM_HOME=/root/.local/share/pnpm
+ENV PATH=$PNPM_HOME:$PATH
+RUN pnpm -C apps/cli link --global
 
 # Set environment
 ENV NODE_ENV=production
