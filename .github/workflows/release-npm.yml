@@ -8,9 +8,6 @@ on:
 jobs:
   release-npm:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: packages/js-sdk
 
     steps:
       - name: Checkout code
@@ -22,21 +19,24 @@ jobs:
           node-version: '20'
           registry-url: 'https://registry.npmjs.org'
 
-      - name: Install root dependencies
-        run: npm install
-        working-directory: .
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
 
-      - name: Install package dependencies
-        run: npm install
+      - name: Install dependencies
+        run: pnpm install
 
       - name: Build package
-        run: npm run build
+        run: pnpm --filter=@ververv/oaktis-sdk run build
 
       - name: Update version
         run: npm version ${GITHUB_REF_NAME#v} --no-git-tag-version
+        working-directory: packages/js-sdk
 
       - name: Publish to npm
         run: npm publish --access public
+        working-directory: packages/js-sdk
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
