@@ -21,6 +21,16 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USER }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+          registry: docker.io
+
+      - name: Select Docker Hub namespace
+        id: ns
+        run: |
+          if [ -n "${{ secrets.DOCKERHUB_NAMESPACE }}" ]; then
+            echo "NAMESPACE=${{ secrets.DOCKERHUB_NAMESPACE }}" >> $GITHUB_OUTPUT
+          else
+            echo "NAMESPACE=${{ secrets.DOCKERHUB_USER }}" >> $GITHUB_OUTPUT
+          fi
 
       - name: Extract version
         id: version
@@ -33,8 +43,8 @@ jobs:
           file: docker/oaktis-cli/Dockerfile
           push: true
           tags: |
-            oaktis/cli:latest
-            oaktis/cli:${{ steps.version.outputs.VERSION }}
+            ${{ steps.ns.outputs.NAMESPACE }}/cli:latest
+            ${{ steps.ns.outputs.NAMESPACE }}/cli:${{ steps.version.outputs.VERSION }}
           platforms: linux/amd64,linux/arm64
           cache-from: type=gha
           cache-to: type=gha,mode=max
@@ -44,7 +54,7 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USER }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-          repository: oaktis/cli
+          repository: ${{ steps.ns.outputs.NAMESPACE }}/cli
           readme-filepath: docker/oaktis-cli/README.md
 
       # - name: Create GitHub Release

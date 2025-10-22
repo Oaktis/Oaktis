@@ -42,11 +42,9 @@ COPY --from=builder /app/apps/cli/dist ./apps/cli/dist
 # Install production dependencies only
 RUN pnpm install --prod --frozen-lockfile
 
-# Create global link for CLI
-# Ensure pnpm global bin is in PATH and link CLI globally
-ENV PNPM_HOME=/root/.local/share/pnpm
-ENV PATH=$PNPM_HOME:$PATH
-RUN pnpm -C apps/cli link --global
+# Provide a stable CLI entry without global linking
+RUN printf '#!/bin/sh\nnode /app/apps/cli/dist/index.js "$@"\n' > /usr/local/bin/oaktis \
+  && chmod +x /usr/local/bin/oaktis
 
 # Set environment
 ENV NODE_ENV=production
