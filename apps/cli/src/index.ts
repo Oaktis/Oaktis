@@ -4,8 +4,8 @@ import { Command } from 'commander';
 import chalk from 'chalk';
 import ora from 'ora';
 import { config } from 'dotenv';
-import { OaktisClient } from '@oaktis/sdk';
-import type { JobStatus } from '@oaktis/sdk';
+import { OaktisClient } from '@ververv/oaktis-sdk';
+import type { JobStatus } from '@ververv/oaktis-sdk';
 
 // Load environment variables
 config();

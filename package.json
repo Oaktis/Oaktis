@@ -7,9 +7,9 @@
     "apps/*"
   ],
   "scripts": {
-    "build": "npm -w @oaktis/sdk run build && npm -w oaktis-cli run build",
+    "build": "pnpm --filter=@ververv/oaktis-sdk run build && pnpm --filter=oaktis-cli run build",
     "lint": "echo 'Linting...'",
-    "test": "npm -w @oaktis/sdk run test",
+    "test": "pnpm --filter=@ververv/oaktis-sdk run test",
     "release": "echo 'Use Git tags to trigger CI'"
   },
   "devDependencies": {
