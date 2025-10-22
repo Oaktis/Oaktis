@@ -31,7 +31,7 @@ RUN corepack enable && corepack prepare pnpm@latest --activate
 WORKDIR /app
 
 # Copy workspace configuration
-COPY package.json pnpm-workspace.yaml ./
+COPY package.json pnpm-workspace.yaml pnpm-lock.yaml ./
 COPY packages/js-sdk/package.json ./packages/js-sdk/
 COPY apps/cli/package.json ./apps/cli/
 
